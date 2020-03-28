@@ -13,7 +13,7 @@
 .history
 node_modules
 .npm
-.chache
+./chache
 dist
 build
 
