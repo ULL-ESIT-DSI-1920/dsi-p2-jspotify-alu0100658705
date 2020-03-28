@@ -1,0 +1,61 @@
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cover {
+	width: 200px;
+	height: 200px;
+	background-size: 200px 200px;
+}
+
+.c1 {
+	background-image: url(../assets/images/caratula01.jpg);
+}
+
+.c2 {
+	background-image: url(../assets/images/caratula02.jpg);
+}
+
+.c3 {
+	background-image: url(../assets/images/caratula03.jpg);
+}
+.vinilo {
+	width: 200px;
+	height: 200px;
+	background: black;
+	border-radius: 50%;
+	z-index: -1; /* Envía al vinilo al fondo (en eje Z) */
+	transform: translateX(-200px); /* Mueve el vinilo detrás de la portada */
+	transition: transform 0.5s; /* No realiza el movimiento de golpe */
+}
+
+.open {
+	transform: translateX(-50px);
+}
+
+.interior {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+}
+
+.i1 {
+	background-color: orange;
+}
+
+.i2 {
+	background-color: royalblue;
+}
+
+.i3 {
+	background-color: rgb(40, 187, 118);
+}
+
+.centro {
+	background-color: white;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}

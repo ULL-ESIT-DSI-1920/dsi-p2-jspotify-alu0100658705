@@ -1,0 +1,45 @@
+{
+	"name": "prct02",
+	"version": "1.0.0",
+	"description": "Práctica 2 DSI",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"clean": "rm -rf dist package-lock.json node_modules",
+		"start": "npx parcel ./src/index.html --port 8080",
+		"build": "parcel build ./src/index.html --public-url /dsi-p1-parcel-alu0100658705/ -d build",
+		"deploy": "gh-pages -d build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ULL-ESIT-DSI-1920/dsi-p2-jspotify-alu0100658705.git"
+	},
+	"author": "Pablo Bethencourt",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ULL-ESIT-DSI-1920/dsi-p2-jspotify-alu0100658705/issues"
+	},
+	"homepage": "https://github.com/ULL-ESIT-DSI-1920/dsi-p2-jspotify-alu0100658705#readme",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.1.0",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.1",
+		"eslint-config-standard": "^14.1.1",
+		"eslint-plugin-import": "^2.20.1",
+		"eslint-plugin-node": "^11.0.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"gh-pages": "^2.2.0",
+		"parcel-bundler": "^1.12.4",
+		"prettier": "^2.0.2"
+	},
+	"dependencies": {
+		"howler": "^2.1.3",
+		"vue-howler": "^0.7.0"
+	}
+}
