@@ -78,4 +78,4 @@ La implementación realizada con Howler es muy similar a la anterior, solo se ha
 
 **¿Cuál prefieres utilizar? ¿Por qué?**
 
-En principio el funcionamiento de ambas me ha resultado similar, y como tampoco he indigado en exceso con las posibilidades de Howler, no tengo una preferencia clara por ninguna de las dos librerías. Aunque destaco que para el caso de Howler, el poder poner atributos cuando se instancia el objeto (por ejemplo que la canción se reproduzca en bucle o que se inicie automaticamente) es un punto muy favorable.
+En principio el funcionamiento de ambas me ha resultado similar, y como tampoco he indagado en exceso con las posibilidades de Howler, no tengo una preferencia clara por ninguna de las dos librerías. Aunque destaco que para el caso de Howler, el poder poner atributos cuando se instancia el objeto (por ejemplo que la canción se reproduzca en bucle o que se inicie automaticamente) es un punto muy favorable.
