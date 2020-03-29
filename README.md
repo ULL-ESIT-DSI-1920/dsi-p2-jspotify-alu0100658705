@@ -50,9 +50,32 @@
 
 ### Retos
 
-1. Revisa la API de audio y añade otras funcionalidades no mencionadas en la práctica. Puedes utilizar funcionalidades como la tasa de velocidad, volumen o eventos especiales para añadir funcionalidades concretas. No te olvides de documentarlas en el README.md y mencionarlo como Funcionalidades extra.
+1. **Revisa la API de audio y añade otras funcionalidades no mencionadas en la práctica.**
 
-2. La librería Howler.js es una interesante librería que nos hace mucho más fácil trabajar con archivos de audio. ¿Serías capaz de cambiar tu proyecto y utilizar la librería Howler.js? ¿Cuál prefieres utilizar? ¿Por qué?
+Funcionalidades extra:
 
-3. ¿Serías capaz de realizar esta práctica íntegramente desde Javascript? Es decir, crear la estructura HTML del interior del <body> directamente desde Javascript, haciendo uso de document.body y la creación de elementos en el DOM. Esto ayuda a comprender como funciona a bajo nivel el DOM de una página HTML y son unas bases interesantes si en el futuro quieres aprender como funcionan por debajo librerías como React y conceptos utilizados como Virtual DOM.
-   La clase Song.js debe buscar en el DOM el elemento HTML indicado (la clave del map) y aplicarle un listener para reproducir la canción si se pulsa encima. Recuerda que con Parcel, podemos importar assets (.mp3, .jpg, etc...) de una carpeta y obtener un objeto (hash o diccionario) con una lista de pares clave-valor con el nombre del fichero y el fichero generado en dist/:
+Dentro del html se han creado 3 nuevas clases (una para cada vinilo), donde se han añadido botones que realizan las siguientes acciones:
+
+- Cambio en el volumen:
+
+Se creó una nueva función que controla el volumen para cada una de las pistas en caso de estar sonando, se definen dos nuevos atributos para controlar por un lado cuando se subre el volumen y por otro para cuando se baja:
+
+![cap09](src/assets/images/cap09.png)
+
+- Reiniciar el audio:
+
+Una vez está sonando la pista, se define una nueva acción que reinicia el audio, esta nueva utilidad se ha añadido a la función "reproducir" mencionada anteriormente, vemos su implementación:
+
+![cap10](src/assets/images/cap10.png)
+
+2. **La librería Howler.js es una interesante librería que nos hace mucho más fácil trabajar con archivos de audio.**
+
+La implementación realizada con Howler es muy similar a la anterior, solo se han añadido una serie de atributos y se ha suprimido la clase _Player.js_, además de limitar las funcionalidades. Veamos los dos ficheros implementados (indexhowler.js y Songhowler.js):
+
+![cap11](src/assets/images/cap11.png)
+
+![cap12](src/assets/images/cap12.png)
+
+**¿Cuál prefieres utilizar? ¿Por qué?**
+
+En principio el funcionamiento de ambas me ha resultado similar, y como tampoco he indigado en exceso con las posibilidades de Howler, no tengo una preferencia clara por ninguna de las dos librerías. Aunque destaco que para el caso de Howler, el poder poner atributos cuando se instancia el objeto (por ejemplo que la canción se reproduzca en bucle o que se inicie automaticamente) es un punto muy favorable.
